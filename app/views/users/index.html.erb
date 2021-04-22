@@ -1,4 +1,4 @@
-<div style="margin-top: 20px;">
+<%= link_to 'Add new user', new_user_path %><br/><br/>
     <% @users.each do |user| %>
         <label>First Name:</label>
         <%= user.first_name %><br/>
@@ -7,7 +7,7 @@
         <label>Email:</label>
         <%= user.email %><br>
         <%= link_to 'Show', user_path(user) %>
+        <%= link_to 'Delete', user_path(user), method: :delete %>
         <br/><br/>
 
     <% end %>
-</div>
