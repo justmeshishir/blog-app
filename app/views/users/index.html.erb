@@ -1,0 +1,10 @@
+<div style="margin-top: 20px;">
+    <% @users.each do |user| %>
+        <label>First Name:</label>
+        <%= user.first_name %><br/>
+        <label>Last Name:</label>
+        <%= user.last_name %><br/>
+        <label>Email:</label>
+        <%= user.email %><br/><br/>
+    <% end %>
+</div>
